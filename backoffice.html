@@ -17,9 +17,10 @@
     />
   </head>
   <body>
+    <div class="container" id="product"> </div>
+    </div>
     <div class="container">
       <h1>Welcome to the backoffice!</h1>
-      <h2>Create all the events that you like</h2>
     </div>
 
     <div class="container">
@@ -27,18 +28,18 @@
         <div class="col-md-6">
           <form onsubmit="handleSubmit()">
             <div class="form-group">
-              <label for="name">Event Name</label>
+                <label for="item">Product</label>
               <input
                 type="text"
                 class="form-control"
-                id="name"
-                placeholder="insert the name right here"
+                id="item"
+                placeholder=" search the product"
                 required
               />
             </div>
 
             <div class="form-group">
-              <label for="description">Event Description</label>
+              <label for="description">Description</label>
               <textarea
                 class="form-control"
                 id="description"
@@ -48,31 +49,26 @@
             </div>
 
             <div class="form-group">
-              <label for="price">Event Price</label>
+              <label for="price">Price</label>
               <input type="number" class="form-control" id="price" required />
             </div>
-
             <div class="form-group">
-              <label for="time">Event Date-Time</label>
-              <input
-                type="datetime-local"
-                class="form-control"
-                id="time"
-                required
-              />
-            </div>
+                <label for="brand">Brand</label>
+                <input type="text" class="form-control" id="brand" required />
+              </div>
 
             <div class="form-group">
               <input
                 type="submit"
                 class="btn btn-primary"
-                value="Submit event"
+                value="Add Item"
               />
             </div>
           </form>
         </div>
         <div class="col-md-6">
-          <div id="eventsColumn"></div>
+          <a href="index.html">BACK OFFICE</a>
+          <div id="productColumns"></div>
         </div>
       </div>
     </div>
@@ -97,3 +93,6 @@
     ></script>
     ​
     <script src="helper.js"></script>
+
+  </body>
+</html>

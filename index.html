@@ -35,5 +35,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="helper.js"></script>
+    <script>
+    /* window.onload = async () => {
+        const urlParams = new URLSearchParams(window.location.search); //creating a new instance of the URLSearchParams object
+        const id = urlParams.get("id"); //saving the id retrieved from the url address bar
+        const event = await getEvent(id); //just one event, the one I was looking for
+        console.log("SINGLE EVENT", event);
+        document.querySelector("#details").innerHTML = `
+            <div>${event.item} : ${event.description}</div>
+        `;
+      }; */
+    </script>
   </body>
 </html>
